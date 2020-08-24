@@ -11,7 +11,7 @@ The Hyper-Text Transfer Protocol (HTTP) is, by definition, a stateless protocol.
 
 For example, when you log in to http://www.learn.co, you fill out a form with your Github username and password. Learn receives that information and, at that moment in time, knows who you are by matching up that log in information, submitted via a HTTP POST request, with data in its database. What about after you log in? After you log in and click a link for a particular lesson, you are sending another HTTP request to Learn. At this point in the process of your interaction with the Learn web application, Learn has no idea who you are! But wait, you might be thinking: *"Didn't I just log in? How can Learn forget so easily?"* That is what it means to be "stateless". Each web request you send is, from the point of view of the application that is receiving that request, totally independent. 
 
-Then how, you might be wondering, does Learn (and every other web app) know who I am after I log in? Through the use of **sessions**. 
+Then how, you might be wondering, does Learn (and every other web app) know who I am after I log in? Through the use of **sessions**.  
 
 A session is a hash that lives in your application in the server. The session hash can be accessed in any controller file of your application. Whatever data is stored in the session hash can thus be accessed, added to, changed or deleted in any controller file or route at any time *and that change persists* for the duration of the session. 
 
